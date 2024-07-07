@@ -248,3 +248,19 @@ text-shadow: 2px 2px 5px red;
 font-family: "Sofia", sans-serif;
 }
 }
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .father div {
+        height: auto;
+        margin: 10px;
+    }
+
+    #t1 {
+        display: none; /* Example: Hide a specific element on phones */
+    }
+}
