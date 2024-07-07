@@ -268,3 +268,33 @@ text-shadow: 2px 2px 5px red;
 font-family: "Sofia", sans-serif;
 }
 }
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .father div {
+        flex: 1 1 100%; /* Full width for each item */
+        margin: 5px;
+    }
+
+    .block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9, .block10,
+    .block11, .block12, .block13, .block14, .block15, .block16, .block17, .block18, .block19, .block20 {
+        height: 150px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .father div {
+        flex: 1 1 calc(50% - 20px); 
+        margin: 10px;
+    }
+}
+
