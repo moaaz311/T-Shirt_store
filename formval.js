@@ -34,7 +34,7 @@ function onlog() {
         error.innerHTML = text;
         return false;
     } else if (Password.length < 3 || isNaN(Password)) {
-        text = "Password must be at least 3 numbers!";
+        text = "Password must be at least 5 numbers!";
         error.innerHTML = text;
         return false;
     } else {
