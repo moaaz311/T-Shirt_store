@@ -9,8 +9,8 @@ function onSubmit() {
         text = "Enter a valid email, please.";
         error.innerHTML = text;
         return false;
-    } else if (Password.length < 5) {
-        text = "Enter a valid password, please.";
+    } else if (Password.length < 5|| isNaN(Password)) {
+        text = "Enter a num only ,at least 5 num ";
         error.innerHTML = text;
         return false;
     } else if (Password != Confirm) {
